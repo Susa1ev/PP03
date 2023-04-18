@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\susal\\Desktop\\PP03\\src\\PP03\\PP03\\PP03.csproj",
+      "projectUniqueName": "C:\\Users\\susal\\Source\\Repos\\PP03\\src\\PP03\\PP03\\PP03.csproj",
       "projectName": "PP03",
-      "projectPath": "C:\\Users\\susal\\Desktop\\PP03\\src\\PP03\\PP03\\PP03.csproj",
+      "projectPath": "C:\\Users\\susal\\Source\\Repos\\PP03\\src\\PP03\\PP03\\PP03.csproj",
       "packagesPath": "C:\\Users\\susal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\susal\\Desktop\\PP03\\src\\PP03\\PP03\\obj\\",
+      "outputPath": "C:\\Users\\susal\\Source\\Repos\\PP03\\src\\PP03\\PP03\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\susal\\AppData\\Roaming\\NuGet\\NuGet.Config",
