@@ -24,7 +24,7 @@ namespace Project.Class
         /// <param name="t">Температура</param>
         /// <param name="h">Влажность</param>
         /// <param name="p">Давление</param>
-        Indications(int t, int h, int p)
+        public Indications(int t, int h, int p)
         {
             Temperature = t;
             Humidity = h;

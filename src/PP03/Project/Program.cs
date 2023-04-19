@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project.Class;
+using System;
 
 namespace Project
 {
@@ -6,24 +7,18 @@ namespace Project
     {
         static void Main(string[] args)
         {
-            int[] arr = { 800, 11, 50, 771, 649, 770, 240, 9 };
-            int temp = 0;
-            for (int i = 0; i < arr.Length; i++)
-            {
-                for (int j = 0; j < arr.Length - 1 - i; j++)
-                {
-                    if (arr[j] > arr[j + 1])
-                    {
-                        temp = arr[j + 1];
-                        arr[j + 1] = arr[j];
-                        arr[j] = temp;
-                    }
-                }
-            }
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Console.Write(arr[i] + " ");
-            }
+            Indications i1 = new Indications(30, 77, 2);
+            Indications i2 = new Indications(30, 22, 2);
+            Indications i3 = new Indications(31, 77, 2);
+            Indications i4 = new Indications(31, 75, 2);
+            Indications i5 = new Indications(31, 78, 2);
+            //Indications i6 = new Indications(31, 77, 2); 
+            //Indications i7 = new Indications(30, 77, 2);
+            //Indications i8 = new Indications(30, 22, 2);
+            //Indications i9 = new Indications(31, 77, 2);
+            Indications[] arr = new Indications[] {i1,i2,i3,i4,i5};
+            WeatherControl weatherControl = new WeatherControl(arr);
+            weatherControl.SortByAscending();
         }
     }
 }
