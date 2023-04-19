@@ -19,6 +19,7 @@ namespace Project
             Indications[] arr = new Indications[] {i1,i2,i3,i4,i5};
             WeatherControl weatherControl = new WeatherControl(arr);
             weatherControl.SortByAscending();
+            weatherControl.SaveArrOnFile();
         }
     }
 }

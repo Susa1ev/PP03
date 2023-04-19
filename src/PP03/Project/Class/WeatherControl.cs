@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
+using System.Reflection;
 
 namespace Project.Class
 {
@@ -51,9 +51,32 @@ namespace Project.Class
                 Console.WriteLine($"{ArrOfIndications[i].Humidity}\t\t{ArrOfIndications[i].Pressure}\t\t{ArrOfIndications[i].Temperature}");
             }
         }
+        /// <summary>
+        /// Сохранение текстового файла
+        /// </summary>
         public void SaveArrOnFile()
         {
-
+            var location = Assembly.GetExecutingAssembly().Location;
+            var path = Path.GetDirectoryName(location);
+            try
+            {
+                StreamWriter sw = new StreamWriter($"{path}\\Log.txt");
+                sw.WriteLine("Влажность\tДавление\tТемпература");
+                for (int i = 0; i < ArrOfIndications.Length; i++)
+                {
+                    sw.WriteLine($"{ArrOfIndications[i].Humidity}\t\t{ArrOfIndications[i].Pressure}\t\t{ArrOfIndications[i].Temperature}");
+                }
+                sw.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine($"Запись в файл прошла успешно! \nПуть к файлу:{path}\\Log.txt");
+            }
         }
+
     }
 }
