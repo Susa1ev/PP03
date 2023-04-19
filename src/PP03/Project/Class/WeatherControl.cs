@@ -45,11 +45,6 @@ namespace Project.Class
                     }
                 }
             }
-            Console.WriteLine("Влажность\tДавление\tТемпература");
-            for (int i = 0; i < ArrOfIndications.Length; i++)
-            {
-                Console.WriteLine($"{ArrOfIndications[i].Humidity}\t\t{ArrOfIndications[i].Pressure}\t\t{ArrOfIndications[i].Temperature}");
-            }
         }
         /// <summary>
         /// Сохранение текстового файла
@@ -77,6 +72,16 @@ namespace Project.Class
                 Console.WriteLine($"Запись в файл прошла успешно! \nПуть к файлу:{path}\\Log.txt");
             }
         }
-
+        /// <summary>
+        /// Вывод данных в консоль
+        /// </summary>
+        public void DisplayOfArr() 
+        {
+            Console.WriteLine("Влажность\tДавление\tТемпература");
+            for (int i = 0; i < ArrOfIndications.Length; i++)
+            {
+                Console.WriteLine($"{ArrOfIndications[i].Humidity}\t\t{ArrOfIndications[i].Pressure}\t\t{ArrOfIndications[i].Temperature}");
+            }
+        }
     }
 }

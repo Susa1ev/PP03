@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\stu-pksp119\\source\\repos\\PP03\\src\\PP03\\Project\\Project.csproj",
+      "projectUniqueName": "D:\\Users\\stu-pksp119\\Source\\Repos\\PP032\\src\\PP03\\Project\\Project.csproj",
       "projectName": "Project",
-      "projectPath": "D:\\Users\\stu-pksp119\\source\\repos\\PP03\\src\\PP03\\Project\\Project.csproj",
+      "projectPath": "D:\\Users\\stu-pksp119\\Source\\Repos\\PP032\\src\\PP03\\Project\\Project.csproj",
       "packagesPath": "D:\\Users\\stu-pksp119\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\stu-pksp119\\source\\repos\\PP03\\src\\PP03\\Project\\obj\\",
+      "outputPath": "D:\\Users\\stu-pksp119\\Source\\Repos\\PP032\\src\\PP03\\Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
