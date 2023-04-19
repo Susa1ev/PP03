@@ -21,7 +21,37 @@ namespace Project.Class
         /// <summary>
         /// Сортировка по возрастанию
         /// </summary>
-        void SortByAscending()
+        public void SortByAscending()
+        {
+            Indications temp;
+            for (int i = 0; i < ArrOfIndications.Length; i++)
+            {
+                for (int j = 0; j < ArrOfIndications.Length - 1 - i; j++)
+                {
+                    if (ArrOfIndications[j].Humidity > ArrOfIndications[j + 1].Humidity)
+                    {
+                        temp = ArrOfIndications[j + 1];
+                        ArrOfIndications[j + 1] = ArrOfIndications[j];
+                        ArrOfIndications[j] = temp;
+                    }
+                    else if (ArrOfIndications[j].Humidity == ArrOfIndications[j + 1].Humidity)
+                    {
+                        if (ArrOfIndications[j].Temperature > ArrOfIndications[j + 1].Temperature)
+                        {
+                            temp = ArrOfIndications[j + 1];
+                            ArrOfIndications[j + 1] = ArrOfIndications[j];
+                            ArrOfIndications[j] = temp;
+                        }
+                    }
+                }
+            }
+            Console.WriteLine("Влажность\tДавление\tТемпература");
+            for (int i = 0; i < ArrOfIndications.Length; i++)
+            {
+                Console.Write($"{ArrOfIndications[i].Humidity}\t{ArrOfIndications[i].Pressure}\t{ArrOfIndications[i].Temperature}");
+            }
+        }
+        public void SaveArrOnFile()
         {
 
         }
